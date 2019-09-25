@@ -203,4 +203,7 @@ window.onload = function(){
 }
 
 
+whlile (Dungeon == null) {
+  sleep(1);
+}
 initialize(1);
