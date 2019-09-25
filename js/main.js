@@ -43,14 +43,23 @@ let gHeight;
 let gImgMap;
 let gDungeon;
 let gPlayer;
+let initialized = false;
 
 
 //const gFilePlayer = "img/kawauso.png";
 
 function initialize(floor){
+  if (!initialized) {
+    if (!floor) {
+      floor = 1;
+    } else {
+      return;
+    }
+  }
   gDungeon = new Dungeon(MAP_WIDTH, MAP_HEIGHT, floor);
   gPlayer = new Player(gDungeon);
   gDungeon.addCharacter(gPlayer);
+  initialized = true;
 }
 
 
@@ -188,6 +197,10 @@ window.onkeydown = function(ev){
 }
 
 window.onload = function(){
+  start();
+}
+
+function start(){
   LoadImage();
 
   gScreen = document.createElement("canvas"); // create virtual gScreen
