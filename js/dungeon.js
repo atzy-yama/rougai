@@ -252,4 +252,4 @@ class Dungeon {
   }
 }
 
-let dungeon_loaded = true;
+dungeon_loaded = true;

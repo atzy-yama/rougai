@@ -43,6 +43,8 @@ let gHeight;
 let gImgMap;
 let gDungeon;
 let gPlayer;
+let character_loaded = false;
+let dungeon_loaded = false;
 
 
 //const gFilePlayer = "img/kawauso.png";

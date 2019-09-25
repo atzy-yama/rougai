@@ -424,4 +424,4 @@ class Namba extends Enemy{
 
 }
 
-let character_loaded = true;
+character_loaded = true;
