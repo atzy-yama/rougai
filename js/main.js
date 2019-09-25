@@ -218,3 +218,26 @@ function start(){
       WmTimer();
     }, 300); // interval(msec)
 }
+
+(function(){
+
+var requestAjax = function(endpoint, callback) {
+    let xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function(){
+        if (this.readyState==4 && this.status==200) {
+            callback(this.response);
+        }
+    };
+    xhr.responseType = 'json';
+    xhr.open('GET',endpoint,true);
+    xhr.send();
+};
+})();
+
+// test code
+requestAjax("https://talentbase.dena.com/api/me", function(response){
+  let body = document.getElementsByTagName('body')[0];
+  let json = document.createElement('p');
+  p.innerHTML = response;
+  body.appendChild(p);
+});
