@@ -379,6 +379,12 @@ class Mori extends Enemy {
   hp = 17;
   maxhp = 17;
   exp = 4;
+  constructor(dungeon){
+    super(dungeon);
+    this.img = new Image();
+    this.img.src = BASE_URL + "img/mori.png";
+  }
+
   name(){
     return "yusuke";
   }
