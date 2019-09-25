@@ -244,7 +244,6 @@ class Dungeon {
     case 15:
     case 20:
       return new Namba(this);
-      */
     default:
       return new Zourimushi(this);
     }
