@@ -331,7 +331,7 @@ class Mijinko extends Enemy{
   constructor(dungeon){
     super(dungeon);
     this.img = new Image();
-    this.img.src = "img/mijinko_trans.png";
+    this.img.src = BASE_URL + "img/mijinko_trans.png";
   }
 
   name(){
@@ -348,7 +348,7 @@ class Zourimushi extends Enemy{
   constructor(dungeon){
     super(dungeon);
     this.img = new Image();
-    this.img.src = "img/zourimushi.png";
+    this.img.src = BASE_URL + "img/zourimushi.png";
   }
 
   name(){
@@ -365,7 +365,7 @@ class Ika extends Enemy{
   constructor(dungeon){
     super(dungeon);
     this.img = new Image();
-    this.img.src = "img/mitsuo.png";
+    this.img.src = BASE_URL + "img/mitsuo.png";
   }
 
   name(){
@@ -382,7 +382,7 @@ class Maeda extends Enemy{
   constructor(dungeon){
     super(dungeon);
     this.img = new Image();
-    this.img.src = "img/maeda.jpg";
+    this.img.src = BASE_URL + "img/maeda.jpg";
   }
 
   name(){
@@ -399,7 +399,7 @@ class Moriyasu extends Enemy{
   constructor(dungeon){
     super(dungeon);
     this.img = new Image();
-    this.img.src = "img/moriyasu.png";
+    this.img.src = BASE_URL + "img/moriyasu.png";
   }
 
   name(){
@@ -415,7 +415,7 @@ class Namba extends Enemy{
   constructor(dungeon){
     super(dungeon);
     this.img = new Image();
-    this.img.src = "img/namba.png";
+    this.img.src = BASE_URL + "img/namba.png";
   }
 
   name(){

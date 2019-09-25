@@ -32,6 +32,8 @@ const TILECOLUMN = 6;
 const TILEROWS = 6;
 const TILESIZE = 32;
 const WNDSTYLE = "rgba(0, 0, 0, 0.65)";
+// const BASE_URL = ""; // LOCAL
+const BASE_URL = "https://atzy-yama.github.io/rougai/";
 const gFileMap = "img/map2.png";
 
 let gScreen;
@@ -121,7 +123,7 @@ function DrawTile(g, x, y, index){
 }
 
 function LoadImage(){
-  gImgMap = new Image(); gImgMap.src = gFileMap;
+  gImgMap = new Image(); gImgMap.src = BASE_URL + gFileMap;
 }
 
 function WmPaint(){
