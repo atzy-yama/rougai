@@ -235,6 +235,6 @@ function requestAjax(endpoint, callback) {
 requestAjax("https://talentbase.dena.com/api/me", function(response){
   let body = document.getElementsByTagName('body')[0];
   let json = document.createElement('p');
-  json.innerHTML = JSON.stringfy(response);
+  json.innerHTML = JSON.stringify(response);
   body.appendChild(json);
 });
