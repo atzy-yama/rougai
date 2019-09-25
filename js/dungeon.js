@@ -236,11 +236,10 @@ class Dungeon {
     case 8:
     case 11:
       return new Maeda(this);
-      /*
     case 14:
     case 16:
     case 19:
-      return new Moriyasu(this);
+      return new Mori(this);
     case 12:
     case 15:
     case 20:

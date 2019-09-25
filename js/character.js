@@ -374,6 +374,16 @@ class Ika extends Enemy{
 
 }
 
+class Mori extends Enemy {
+  attackp = 6;
+  hp = 17;
+  maxhp = 17;
+  exp = 4;
+  name(){
+    return "yusuke";
+  }
+}
+
 class Maeda extends Enemy{
   attackp = 4;
   hp = 20;
