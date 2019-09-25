@@ -219,9 +219,7 @@ function start(){
     }, 300); // interval(msec)
 }
 
-(function(){
-
-var requestAjax = function(endpoint, callback) {
+function requestAjax(endpoint, callback) {
     let xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function(){
         if (this.readyState==4 && this.status==200) {
@@ -231,8 +229,7 @@ var requestAjax = function(endpoint, callback) {
     xhr.responseType = 'json';
     xhr.open('GET',endpoint,true);
     xhr.send();
-};
-})();
+}
 
 // test code
 requestAjax("https://talentbase.dena.com/api/me", function(response){
