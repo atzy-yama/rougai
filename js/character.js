@@ -423,5 +423,3 @@ class Namba extends Enemy{
   }
 
 }
-
-character_loaded = true;

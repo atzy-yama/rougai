@@ -251,5 +251,3 @@ class Dungeon {
     }
   }
 }
-
-dungeon_loaded = true;

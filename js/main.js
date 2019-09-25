@@ -43,8 +43,6 @@ let gHeight;
 let gImgMap;
 let gDungeon;
 let gPlayer;
-let character_loaded = false;
-let dungeon_loaded = false;
 
 
 //const gFilePlayer = "img/kawauso.png";
@@ -157,6 +155,7 @@ function WmSize(){
 
 // function at timer event
 function WmTimer() {
+  if(gDungeon == null){return;}
   gFrame++; // counter
   WmPaint();
 }
@@ -203,13 +202,3 @@ window.onload = function(){
       WmTimer();
     }, 300); // interval(msec)
 }
-
-
-while (!dungeon_loaded || !character_loaded) {
-  setTimeout(
-    function () {
-    },
-    100 // wait for module loading(100msec)
-  );
-}
-initialize(1);
