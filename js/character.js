@@ -1,7 +1,7 @@
 "use strict";
 
 
-const gFilePlayer = "img/kawauso.png";
+const gFilePlayer = BASE_URL + "img/kawauso.png";
 const CHARHEIGHT = 30;
 const CHARWIDTH = 30;
 
