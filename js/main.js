@@ -206,6 +206,10 @@ window.onload = function(){
 
 
 while (!dungeon_loaded || !character_loaded) {
-  sleep(100); // wait for module loading(100msec)
+  setTimeout(
+    function () {
+    },
+    100 // wait for module loading(100msec)
+  );
 }
 initialize(1);
