@@ -203,7 +203,7 @@ window.onload = function(){
 }
 
 
-while (Dungeon == null) {
-  sleep(1);
+while (!dungeon_loaded || !character_loaded) {
+  sleep(100); // wait for module loading(100msec)
 }
 initialize(1);

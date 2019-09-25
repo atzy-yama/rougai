@@ -251,3 +251,5 @@ class Dungeon {
     }
   }
 }
+
+let dungeon_loaded = true;
