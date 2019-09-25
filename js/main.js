@@ -59,7 +59,10 @@ function initialize(floor){
   gDungeon = new Dungeon(MAP_WIDTH, MAP_HEIGHT, floor);
   gPlayer = new Player(gDungeon);
   gDungeon.addCharacter(gPlayer);
-  initialized = true;
+  if (!initialized) {
+    initialized = true;
+    start();
+  }
 }
 
 
